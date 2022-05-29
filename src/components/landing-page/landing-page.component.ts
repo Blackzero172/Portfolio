@@ -19,14 +19,16 @@ import { Component, OnInit } from '@angular/core';
     trigger('fade', [
       state('false', style({ opacity: 0 })),
       state('true', style({ opacity: 1 })),
-      transition('false => true', animate('1s ease-in')),
+      transition('false => true', animate('1.5s 0.25s ease-out')),
     ]),
   ],
 })
-export class LandingPageComponent implements OnInit {
+export class LandingPageComponent {
   constructor() {}
   public fadeInStart = false;
-  ngOnInit(): void {
-    this.fadeInStart = true;
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      this.fadeInStart = true;
+    }, 0);
   }
 }

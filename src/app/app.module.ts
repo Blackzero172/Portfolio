@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LandingPageModule } from '../components/landing-page/landing-page.module';
+import { AboutPageModule } from '../components/about-page/about-page.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,6 +19,7 @@ import { LandingPageModule } from '../components/landing-page/landing-page.modul
     MatCardModule,
     MatToolbarModule,
     LandingPageModule,
+    AboutPageModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
