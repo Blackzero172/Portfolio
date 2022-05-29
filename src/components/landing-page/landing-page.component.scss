@@ -1,0 +1,25 @@
+@import "../../variables";
+@import "../../functions";
+.landing-page {
+  height: 93.1vh;
+  color: $primary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  header {
+    text-align: center;
+    margin-top: auto;
+    h2 {
+      font-size: 6rem;
+      margin: 2rem 0;
+    }
+    h3 {
+      font-size: 3rem;
+      margin: 1rem 0;
+    }
+  }
+  a {
+    margin-top: auto;
+    margin-bottom: 0.25rem;
+  }
+}

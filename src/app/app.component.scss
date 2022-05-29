@@ -1,0 +1,18 @@
+@import "../variables";
+mat-toolbar ul {
+  color: $primary;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  width: 100%;
+  li {
+    margin: 0 2rem;
+    a {
+      border: 2px solid transparent;
+      transition: border-color 0.25s ease;
+      &:hover {
+        border-bottom-color: $accent;
+      }
+    }
+  }
+}
