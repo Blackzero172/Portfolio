@@ -5,8 +5,9 @@
 $app-primary: mat-palette($mat-indigo, 200);
 $app-accent: mat-palette($mat-blue, 600);
 $app-warn: mat-palette($mat-red);
-
+$app-white: mat-palette($mat-grey, 100);
 // Create your Sass color vars (will be available in all the project)
 $primary: mat-color($app-primary);
 $accent: mat-color($app-accent);
 $warn: mat-color($app-warn);
+$white: mat-color($app-white);

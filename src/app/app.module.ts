@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LandingPageModule } from '../components/landing-page/landing-page.module';
 import { AboutPageModule } from '../components/about-page/about-page.module';
+import { SkillsPageModule } from 'src/components/skills-page/skills-page.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,6 +21,7 @@ import { AboutPageModule } from '../components/about-page/about-page.module';
     MatToolbarModule,
     LandingPageModule,
     AboutPageModule,
+    SkillsPageModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

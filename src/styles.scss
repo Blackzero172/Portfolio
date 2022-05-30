@@ -24,7 +24,7 @@ $Portfolio-theme: mat.define-light-theme(
 @include mat.all-component-themes($Portfolio-theme);
 
 /* You can add global styles to this file, and also import other style files */
-
+@import "./variables";
 html,
 body {
   height: 100%;
@@ -38,12 +38,8 @@ a {
   text-decoration: none;
   color: unset;
 }
-
-html,
-body {
-  height: 100%;
-}
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+mat-card.mat-card.mat-focus-indicator {
+  width: 50%;
+  background-color: $white;
+  box-shadow: 0 0 5px 2px darken($white, 10%);
 }

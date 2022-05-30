@@ -1,0 +1,13 @@
+.skills-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  mat-card-title {
+    text-align: center;
+  }
+  mat-card-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}

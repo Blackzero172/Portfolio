@@ -10,11 +10,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
-  styleUrls: [
-    './landing-page.component.scss',
-    '../../_variables.scss',
-    '../../_functions.scss',
-  ],
+  styleUrls: ['./landing-page.component.scss'],
   animations: [
     trigger('fade', [
       state('false', style({ opacity: 0 })),
@@ -23,10 +19,10 @@ import { Component, OnInit } from '@angular/core';
     ]),
   ],
 })
-export class LandingPageComponent {
+export class LandingPageComponent implements OnInit {
   constructor() {}
   public fadeInStart = false;
-  ngAfterViewInit(): void {
+  ngOnInit(): void {
     setTimeout(() => {
       this.fadeInStart = true;
     }, 0);
