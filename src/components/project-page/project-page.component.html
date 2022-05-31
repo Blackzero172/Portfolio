@@ -1,0 +1,16 @@
+<div class="project-page">
+  <h2>Front-End Projects</h2>
+  <div class="front-end-projects">
+    <app-project-card
+      *ngFor="let project of frontEndProjects"
+      [project]="project"
+    ></app-project-card>
+  </div>
+  <h2>Back-End Projects</h2>
+  <div class="back-end-projects">
+    <app-project-card
+      *ngFor="let project of backEndProjects"
+      [project]="project"
+    ></app-project-card>
+  </div>
+</div>

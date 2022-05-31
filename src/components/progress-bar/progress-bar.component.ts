@@ -10,4 +10,6 @@ export class ProgressBarComponent implements OnInit {
 
   ngOnInit(): void {}
   @Input() label = '';
+  @Input() percent = '40';
+  @Input() type = '';
 }

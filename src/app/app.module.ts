@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LandingPageModule } from '../components/landing-page/landing-page.module';
 import { AboutPageModule } from '../components/about-page/about-page.module';
 import { SkillsPageModule } from 'src/components/skills-page/skills-page.module';
+import { ProjectPageModule } from 'src/components/project-page/project-page.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,7 +22,7 @@ import { SkillsPageModule } from 'src/components/skills-page/skills-page.module'
     MatToolbarModule,
     LandingPageModule,
     AboutPageModule,
-    SkillsPageModule,
+    ProjectPageModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

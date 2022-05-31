@@ -1,10 +1,11 @@
 @import "../../variables";
 .about-page {
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   mat-card {
+    margin-top: 5rem;
     mat-card-header {
       flex-direction: row-reverse;
       align-items: center;

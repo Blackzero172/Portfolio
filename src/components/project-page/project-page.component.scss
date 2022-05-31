@@ -1,0 +1,19 @@
+.project-page {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h2:last-of-type {
+    margin-top: 2rem;
+  }
+  .front-end-projects,
+  .back-end-projects {
+    margin: 1rem 0;
+    width: 100%;
+    padding: 0 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+}

@@ -7,7 +7,6 @@
 $Portfolio-primary: mat.define-palette(mat.$indigo-palette, 200);
 $Portfolio-accent: mat.define-palette(mat.$blue-palette, 600);
 $Portfolio-warn: mat.define-palette(mat.$red-palette);
-
 $Portfolio-theme: mat.define-light-theme(
   (
     color: (
@@ -25,6 +24,11 @@ $Portfolio-theme: mat.define-light-theme(
 
 /* You can add global styles to this file, and also import other style files */
 @import "./variables";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 html,
 body {
   height: 100%;

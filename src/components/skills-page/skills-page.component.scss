@@ -1,5 +1,4 @@
 .skills-page {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,7 +6,18 @@
     text-align: center;
   }
   mat-card-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    display: flex;
   }
+  mat-card {
+    width: 70%;
+  }
+  app-progress-bar {
+    margin: 2rem;
+  }
+}
+.front-end-container,
+.back-end-container {
+  flex: 1;
+  padding: 0.3rem 1rem;
+  text-align: center;
 }
