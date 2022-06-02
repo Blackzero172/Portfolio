@@ -28,3 +28,23 @@ mat-toolbar {
     }
   }
 }
+footer {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: $text-primary;
+  font-size: 1.3rem;
+  .social-media {
+    display: flex;
+  }
+  a {
+    margin: 0 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fa-icon {
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -21,6 +21,14 @@ mat-card.mat-card.mat-focus-indicator {
         color: $text-primary;
         padding: 0 3rem;
       }
+      .icon-container {
+        margin-bottom: 0.5rem;
+        fa-icon {
+          font-size: 1.5rem;
+          margin: 0 0.5rem;
+          color: $accent;
+        }
+      }
       .action-container {
         margin-top: auto;
         a {

@@ -4,6 +4,12 @@
     <div class="description">
       <h2>{{ project.name }}</h2>
       <h3>{{ project.description }}</h3>
+      <div class="icon-container">
+        <fa-icon
+          *ngFor="let icon of project.icons"
+          [icon]="iconsDict[icon]"
+        ></fa-icon>
+      </div>
       <div class="action-container">
         <a
           target="_blank"

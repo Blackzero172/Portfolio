@@ -47,3 +47,30 @@ mat-card.mat-card.mat-focus-indicator {
   background-color: $white;
   box-shadow: 0 0 5px 2px darken($white, 10%);
 }
+fa-icon {
+  svg {
+    &[data-icon="html5"] {
+      color: orangered;
+    }
+    &[data-icon="css3-alt"],
+    &[data-icon="react"],
+    &[data-icon="python"] {
+      color: $accent;
+    }
+    &[data-icon="js-square"] {
+      color: rgb(222, 222, 0);
+    }
+    &[data-icon="angular"] {
+      color: red;
+    }
+    &[data-icon="node-js"] {
+      color: rgb(138, 205, 36);
+    }
+    &[data-icon="database"] {
+      color: green;
+    }
+    &[data-icon="flask"] {
+      color: black;
+    }
+  }
+}
