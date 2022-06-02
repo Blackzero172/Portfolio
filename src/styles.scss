@@ -16,12 +16,23 @@ $Portfolio-theme: mat.define-light-theme(
     ),
   )
 );
+$Portfolio-dark-theme: mat.define-dark-theme(
+  (
+    color: (
+      primary: $Portfolio-primary,
+      accent: $Portfolio-accent,
+      warn: $Portfolio-warn,
+    ),
+  )
+);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include mat.all-component-themes($Portfolio-theme);
-
+.dark {
+  @include mat.all-component-themes($Portfolio-dark-theme);
+}
 /* You can add global styles to this file, and also import other style files */
 @import "./variables";
 * {
@@ -44,7 +55,7 @@ a {
 }
 mat-card.mat-card.mat-focus-indicator {
   width: 50%;
-  background-color: $white;
+  color: inherit;
   box-shadow: 0 0 5px 2px darken($white, 10%);
 }
 fa-icon {

@@ -15,6 +15,7 @@ import { ProjectPageComponent } from 'src/components/project-page/project-page.c
 import { ProgressBarComponent } from 'src/components/progress-bar/progress-bar.component';
 import { SkillsPageComponent } from 'src/components/skills-page/skills-page.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatProgressBarModule,
     MatIconModule,
     FontAwesomeModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

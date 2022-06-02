@@ -1,5 +1,6 @@
 @import "../../variables";
 .about-page {
+  padding-top: 5rem;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -7,10 +8,10 @@
   flex-direction: column;
   > h2 {
     font-size: 2rem;
-    color: $text-primary;
+    color: inherit;
   }
   mat-card {
-    color: $text-primary;
+    color: inherit;
     margin-top: 5rem;
     mat-card-header {
       flex-direction: column;

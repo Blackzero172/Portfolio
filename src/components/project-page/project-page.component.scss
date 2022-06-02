@@ -5,7 +5,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: $text-primary;
+  color: inherit;
+  padding-top: 5rem;
   h2 {
     border: 2px solid $accent;
     border-radius: 15px;

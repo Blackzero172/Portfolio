@@ -1,16 +1,20 @@
 @import "../variables";
+.app {
+  color: $text-primary;
+  &.dark {
+    color: $primary;
+  }
+}
 .page-grid {
   display: grid;
   grid-template-rows: repeat(auto-fill, minmax(100vh, 1fr));
-  gap: 10rem;
 }
-mat-toolbar {
+.mat-toolbar {
   position: fixed;
   top: 0;
   z-index: 1;
-  background-color: rgba(245, 245, 245, 0.75);
   justify-content: center;
-  color: $text-primary;
+  color: inherit;
   ul {
     display: flex;
     list-style-type: none;
@@ -26,6 +30,9 @@ mat-toolbar {
         }
       }
     }
+    button {
+      margin-left: auto;
+    }
   }
 }
 footer {
@@ -33,7 +40,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  color: $text-primary;
+  color: inherit;
   font-size: 1.3rem;
   .social-media {
     display: flex;

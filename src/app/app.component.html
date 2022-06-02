@@ -1,10 +1,13 @@
-<div class="app">
+<div [ngClass]="{ app: true, dark: isDark, 'mat-app-background': true }">
   <mat-toolbar>
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
     </ul>
+    <button mat-raised-button (click)="toggleDark()">
+      <fa-icon [icon]="isDark ? dark : light"></fa-icon>
+    </button>
   </mat-toolbar>
   <div class="page-grid">
     <app-landing-page id="home"></app-landing-page>

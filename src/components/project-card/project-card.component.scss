@@ -5,7 +5,7 @@ mat-card.mat-card.mat-focus-indicator {
   text-align: center;
   padding-top: 1rem;
   h2 {
-    color: $text-primary;
+    color: inherit;
   }
   mat-card-content {
     display: flex;
@@ -19,7 +19,7 @@ mat-card.mat-card.mat-focus-indicator {
         margin-top: auto;
       }
       h3 {
-        color: $text-primary;
+        color: inherit;
         padding: 0 3rem;
       }
       .icon-container {
