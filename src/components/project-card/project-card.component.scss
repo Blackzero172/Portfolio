@@ -9,6 +9,7 @@ mat-card.mat-card.mat-focus-indicator {
   }
   mat-card-content {
     display: flex;
+    align-items: center;
     .description {
       width: 100%;
       display: flex;
@@ -39,10 +40,23 @@ mat-card.mat-card.mat-focus-indicator {
   }
   img {
     width: 50%;
+    height: fit-content;
   }
   &.reverse {
     mat-card-content {
       flex-direction: row-reverse;
+    }
+  }
+}
+@media screen and(max-width:526px) {
+  mat-card.mat-card.mat-focus-indicator,
+  mat-card.mat-card.mat-focus-indicator.reverse {
+    mat-card-content {
+      align-items: center;
+      flex-direction: column;
+      img {
+        width: 100%;
+      }
     }
   }
 }

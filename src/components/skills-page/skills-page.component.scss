@@ -8,18 +8,35 @@
   }
   mat-card-content {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   mat-card {
     width: 70%;
     color: $text-primary;
   }
   app-progress-bar {
-    margin: 2rem;
+    margin: 2rem 0;
   }
 }
 .front-end-container,
 .back-end-container {
+  h2 {
+    border: 2px solid $accent;
+    border-radius: 1rem;
+    padding: 0 0.5rem;
+  }
+  display: flex;
+  flex-direction: column;
   flex: 1;
   padding: 0.3rem 1rem;
   text-align: center;
+}
+@media screen and(max-width:526px) {
+  .skills-page mat-card {
+    width: 100%;
+  }
+  mat-card.mat-card mat-card-content.mat-card-content {
+    flex-direction: column;
+  }
 }
