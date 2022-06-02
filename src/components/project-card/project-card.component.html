@@ -1,4 +1,25 @@
-<a href="{{ project.link }}" target="_blank" mat-raised-button color="accent">
-  <img src="{{ project.img }}" alt="" />
-  <p>{{ project.name }}</p>
-</a>
+<mat-card [ngClass]="{ reverse: isReverse }">
+  <mat-card-content>
+    <img src="{{ project.img }}" alt="" />
+    <div class="description">
+      <h2>{{ project.name }}</h2>
+      <h3>{{ project.description }}</h3>
+      <div class="action-container">
+        <a
+          target="_blank"
+          href="{{ project.codeLink }}"
+          mat-raised-button
+          color="accent"
+          >Source Code</a
+        >
+        <a
+          target="_blank"
+          href="{{ project.demoLink }}"
+          mat-raised-button
+          color="accent"
+          >Live Demo</a
+        >
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

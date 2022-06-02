@@ -1,9 +1,16 @@
+@import "../../variables";
 .project-page {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: $text-primary;
+  h2 {
+    border: 2px solid $accent;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+  }
   h2:last-of-type {
     margin-top: 2rem;
   }
@@ -12,8 +19,9 @@
     margin: 1rem 0;
     width: 100%;
     padding: 0 2rem;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

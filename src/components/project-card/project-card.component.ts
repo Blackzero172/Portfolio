@@ -11,7 +11,10 @@ export class ProjectCardComponent implements OnInit {
   ngOnInit(): void {}
   @Input() project = {
     name: '',
+    description: '',
     img: '',
-    link: '',
+    demoLink: '',
+    codeLink: '',
   };
+  @Input() isReverse = false;
 }

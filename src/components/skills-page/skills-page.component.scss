@@ -1,3 +1,4 @@
+@import "../../variables";
 .skills-page {
   display: flex;
   justify-content: center;
@@ -10,6 +11,7 @@
   }
   mat-card {
     width: 70%;
+    color: $text-primary;
   }
   app-progress-bar {
     margin: 2rem;

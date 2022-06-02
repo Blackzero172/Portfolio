@@ -10,8 +10,8 @@ mat-toolbar {
   z-index: 1;
   background-color: rgba(245, 245, 245, 0.75);
   justify-content: center;
+  color: $text-primary;
   ul {
-    color: $primary;
     display: flex;
     list-style-type: none;
     justify-content: center;

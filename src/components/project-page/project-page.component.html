@@ -2,14 +2,16 @@
   <h2>Front-End Projects</h2>
   <div class="front-end-projects">
     <app-project-card
-      *ngFor="let project of frontEndProjects"
+      *ngFor="let project of frontEndProjects; let i = index"
+      [isReverse]="i % 2 === 0"
       [project]="project"
     ></app-project-card>
   </div>
-  <h2>Back-End Projects</h2>
+  <h2>Full-Stack Projects</h2>
   <div class="back-end-projects">
     <app-project-card
-      *ngFor="let project of backEndProjects"
+      *ngFor="let project of backEndProjects; let i = index"
+      [isReverse]="i % 2 === 0"
       [project]="project"
     ></app-project-card>
   </div>

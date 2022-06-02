@@ -2,7 +2,8 @@
 @import "../../functions";
 .landing-page {
   height: 100%;
-  color: $primary;
+  color: $text-primary;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,7 +12,7 @@
     margin-top: auto;
     h2 {
       font-size: 6rem;
-      margin: 2rem 0;
+      margin: 3rem 0;
     }
     h3 {
       font-size: 3rem;

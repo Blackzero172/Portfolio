@@ -1,11 +1,40 @@
 @import "../../variables";
-a {
+mat-card.mat-card.mat-focus-indicator {
   width: 100%;
   height: 100%;
   text-align: center;
   padding-top: 1rem;
+  h2 {
+    color: $text-primary;
+  }
+  mat-card-content {
+    display: flex;
+    .description {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        margin-top: auto;
+      }
+      h3 {
+        color: $text-primary;
+        padding: 0 3rem;
+      }
+      .action-container {
+        margin-top: auto;
+        a {
+          margin: 0 1rem;
+        }
+      }
+    }
+  }
   img {
-    width: 100%;
-    transition: transform 0.3s ease;
+    width: 50%;
+  }
+  &.reverse {
+    mat-card-content {
+      flex-direction: row-reverse;
+    }
   }
 }

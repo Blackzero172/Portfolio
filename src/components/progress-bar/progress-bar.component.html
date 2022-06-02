@@ -1,5 +1,6 @@
 <div class="progress-bar">
-  <label>{{ label }}</label>
+  <fa-icon [icon]="icons[icon]" *ngIf="icon !== ''"></fa-icon>
+  <label> {{ label }}</label>
   <mat-progress-bar
     mode="determinate"
     value="{{ percent }}"
