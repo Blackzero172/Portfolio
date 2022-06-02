@@ -7,6 +7,7 @@ import {
   faNodeJs,
   faPython,
   faReact,
+  faSass,
 } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase, faFlask } from '@fortawesome/free-solid-svg-icons';
 @Component({
@@ -31,5 +32,6 @@ export class ProgressBarComponent implements OnInit {
     mongo: faDatabase,
     flask: faFlask,
     python: faPython,
+    scss: faSass,
   };
 }
